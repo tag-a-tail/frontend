@@ -1,4 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.login-bg {
+    background: rgba(185, 147, 214, 0.9); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(140, 166, 219, 0.97), rgba(185, 147, 214, 0.87)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(140, 166, 219, 0.97), rgba(185, 147, 214, 0.87)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

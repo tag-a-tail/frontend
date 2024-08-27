@@ -1,16 +1,15 @@
-import {Button} from "@/components/ui/button.jsx";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import HomePage from "@/pages/home/HomePage.jsx";
+import AuthPage from "@/pages/auth/AuthPage.jsx";
 
-function App() {
+
+export default function App() {
     return (
-        <div className="p-2">
-            <h1 className="text-3xl font-bold underline">
-                Hello World!
-            </h1>
-            <div>
-                <Button>Click Me</Button>
-            </div>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/auth" element={<AuthPage/>}/>
+            </Routes>
+        </Router>
     )
 }
-
-export default App
