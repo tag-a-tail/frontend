@@ -5,11 +5,13 @@ import AuthPage from "@/pages/auth/AuthPage.jsx";
 
 export default function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<HomePage/>}/>
-                <Route path="/auth" element={<AuthPage/>}/>
-            </Routes>
-        </Router>
+        <>
+            <Router>
+                <Routes>
+                    <Route path="/auth" element={<AuthPage/>}/>
+                    <Route path="/" element={<HomePage/>}/>
+                </Routes>
+            </Router>
+        </>
     )
 }
